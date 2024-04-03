@@ -1,11 +1,18 @@
 
 import './App.css';
 import { useState } from 'react';
+import Counter from './features/counter/Counter';
+import Coin from './features/coin/Coin';
+import Theme from './features/theme/theme';
+
 function App() {
-  const[count,setCount]=useState(0)
+
   return (
     <div className="App">
-      <button onClick={()=>{setCount(count+1)}}>+</button>{count}<button onClick={()=>{setCount(count-1)}}>-</button>
+      <Counter></Counter>
+      <Coin></Coin>
+    <Theme></Theme>
+
     </div>
   );
 }
